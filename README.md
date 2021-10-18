@@ -4,7 +4,7 @@ STUDYSmarter Queue Flow Manager and Usage Reporting System
 
 ## Installation
 
-clone the repo via you prefered method. 
+clone the repo via your prefered method. 
 
 Use the node.js package manager [npm](https://www.npmjs.com/) to install the projects package dependencies.
 
