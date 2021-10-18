@@ -30,7 +30,12 @@ npm run start
 ```
 
 ### Dev Tools
-In the Electron app window, click 'View' then 'Toggle Developer Tools'.
+You will need to enable the menubar in the main process index.ts file by commenting out the line:
+```
+39: Menu.setApplicationMenu(null)
+```
+
+Then, in the Electron app window, click 'View' then 'Toggle Developer Tools'.
 
 ### Building For Production
 Make sure all the dependencies are installed and It's recommended to run this before building
