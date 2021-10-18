@@ -1,0 +1,30 @@
+//Style the submit button like the others in the dashboard
+#button{
+    background-color: navy;
+    border: none;
+    border-radius: 8px;
+    margin: 4px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#button:hover {
+    background-color: blue;
+}
+
+//The form itself
+.form-container {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+//Added margins between inputs
+.margin {
+    margin: 4px;
+}

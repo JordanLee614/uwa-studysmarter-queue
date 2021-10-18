@@ -1,0 +1,92 @@
+//Overall container
+.help-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+// Nav contents
+.nav-container {
+  list-style: none;
+  margin: 10px;
+  padding: 0px 10px;
+  max-height: 250px;
+  max-width: 250px;
+  min-width: 160px;
+
+  hr {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+
+  li {
+    padding-bottom: 30px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      font-size: large;
+      transition: 0.4s;
+    }
+  }
+}
+
+// Help contents
+.contents-container {
+  margin-left: 10px;
+  padding: 0px 10px;
+  max-height: 80vh;
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  // Number annotations
+  .num-li {
+    margin: 0px 7%;
+    font-size: large;
+    li {
+      padding: 8px;
+      font-weight: bold;
+      * {
+        font-weight: normal;
+      }
+    }
+  }
+
+  h2,
+  h3 {
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  // Unordered list under each functionality
+  .func-ul {
+    margin: 10px 0;
+    li {
+      padding: 1px 0;
+    }
+  }
+}
+
+// Images size
+.image,
+.imageForm {
+  max-width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 2% 5%;
+}
+
+.imageForm {
+  max-width: 30%;
+  padding: 0 30%;
+}

@@ -1,0 +1,153 @@
+//STYLING THE MAIN DASHBOARD
+// =============================
+
+// Giving everything borders
+.queue,
+.student {
+  border: solid;
+}
+
+.queue-container {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 95vh;
+}
+
+.queue {
+  margin: 40px;
+  width: 600px;
+  height: 80vh;
+  border-radius: 4px;
+  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+
+  // Title of the queue becomes fixed when scrolling with overflow
+  h1 {
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    position: sticky;
+    padding: 20px;
+  }
+
+  //The est. time stays at the bottom of the queue for quick access
+  .p1 {
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    position: sticky;
+    padding: 20px;
+  }
+
+  // Easier to implement the styling of the text for the student info
+  div {
+    text-align: left;
+  }
+}
+
+.student {
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+
+  // Separating status colours to small boxes next to student info
+  .status-container {
+    border-radius: 8px;
+    margin: auto 5px;
+    color: white;
+    width: 7em;
+    height: fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  //Student name and id
+  .name-id {
+    padding: 0 10px;
+    margin-left: 15px;
+  }
+
+  .unit-code {
+    padding-top: 35px;
+    margin: 0 10px;
+  }
+}
+
+.student:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border-color: red;
+}
+
+.in-queue {
+  background-color: #3c91e6;
+}
+.in-session {
+  background-color: #16db65;
+}
+
+.time-up {
+  background-color: #d95d39;
+}
+
+//Button styling
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .button,
+  .button2 {
+    background-color: navy;
+    border: none;
+    border-radius: 8px;
+    margin: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .button2 {
+    width: 80px;
+    height: 50px;
+  }
+
+  .button:hover,
+  .button2:hover {
+    background-color: blue;
+  }
+
+  .inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+  }
+}
+
+.modal-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10em;
+}
+
+.modal {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}

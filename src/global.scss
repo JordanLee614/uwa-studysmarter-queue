@@ -1,0 +1,102 @@
+.app {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app > * {
+  font-family: "gotham light";
+}
+
+.tab-bar {
+  background: linear-gradient(
+    179deg,
+    rgb(42, 63, 167),
+    rgb(35, 52, 139) 25%,
+    rgb(24, 36, 95)
+  );
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .tabs {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    span:first-of-type {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span:last-of-type {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 46px;
+    margin: 3px;
+  }
+
+  .spacer {
+    height: 48px;
+    width: 48px;
+    margin: 3px;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
+
+@font-face {
+  font-family: "gotham light";
+  src: url("./assets/fonts/gotham-light.otf");
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+//Scroll bar style
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+::-webkit-scrollbar-button {
+  height: 20px;
+}
