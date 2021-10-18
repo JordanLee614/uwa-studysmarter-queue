@@ -33,43 +33,37 @@ npm run start
 In the Electron app window, click 'View' then 'Toggle Developer Tools'.
 
 ### Building For Production
-It's recommended to run this before building
+Make sure all the dependencies are installed and It's recommended to run this before building
 ```bash
 npm run rebuild
 ```
 
-#### WINDOWS
+then run
 ```bash
 npm run make
 ```
 
-#### OTHER OS
-TDB
+the output will be found in 
+* ./out/
+
+To run the production build either install the application through the installer found in 
+* ./out/make/**/*
+
+and run through the app shortcut in your OS application folder.
+
+or
+
+run the application from the packaged executable in
+* ./out/STUDYSmarter Queue System-{current_OS}-x64/cits3200-project
+
 
 ### Linting
-If typing is too strict, add the linting config file to gitignore then change the linter config. 
-
 To run linting check
 ```bash
 npm run lint 
 ```
 
-
-## Contributing
-
-1. base your local on the prod-build branch
-2. create a feature branch
-3. commit and push your changes into the feature branch
-4. before merging your changes into main
-    1. merge main into your feature branch
-    2. test the integration of you changes with main
-    3. if it's all good move onto the next step 
-6. create pull request to merge feature branch into main branch
-7. review and then approve the pull request
-8. Done :)
-
 ## Backend
-
 Libraries/APIs/Languages:
 * Node.js 
 * Typescript
@@ -78,12 +72,10 @@ Libraries/APIs/Languages:
 
 Back-end integration will be set up in services file:
 
-* /src/services/*.service.ts
+* /src/services/*.service.ts 
 
-Feel free to add new files using the *.service.ts naming convention. 
-
-Database is stored under its own folder in the root directory (this is subject to change): 
-* /database/database.sqlite3
+Database will be generated if it doesn't already exist and it will be found in the root directory: 
+* ./database.sqlite3
 
 ## Frontend
 
@@ -126,19 +118,14 @@ Assets (images, fonts, etc) stored in:
 * /src/assets/**/* 
 
 ```
-e.g.: /src/assets/fonts/gotham-light.otf 
+e.g.: /src/assets/icon/favicon.png 
 ```
 
 ### Electron
-Window settings and toolbar are stored in the src dir: 
+main process files are found in src dir: 
 * /src/index.ts
 * /src/index.html
 
-Context Bridge - ipcRenderer function declarations
-* /src/preload.js
+renderer process entry point is found in src dir:
+* /src/renderer.tsx
 
-### Dev Source Files
-Transpiled source files for web server stored in: /dist/* 
-
-## License
-TBD
